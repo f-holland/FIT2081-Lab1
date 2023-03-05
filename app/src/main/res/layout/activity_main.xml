@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/bookIdEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:width="200dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bookIdLbl"
+        app:layout_constraintStart_toEndOf="@+id/bookIdLbl"
+        app:layout_constraintTop_toTopOf="@+id/bookIdLbl" />
+
+    <EditText
+        android:id="@+id/descEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:width="200dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/descLbl"
+        app:layout_constraintStart_toEndOf="@+id/descLbl"
+        app:layout_constraintTop_toTopOf="@+id/descLbl" />
+
+    <TextView
+        android:id="@+id/authorLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Author"
+        app:layout_constraintEnd_toEndOf="@+id/isbnLbl"
+        app:layout_constraintTop_toBottomOf="@+id/isbnLbl" />
+
+    <TextView
+        android:id="@+id/descLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="@+id/authorLbl"
+        app:layout_constraintTop_toBottomOf="@+id/authorLbl" />
+
+    <TextView
+        android:id="@+id/priceLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Price"
+        app:layout_constraintEnd_toEndOf="@+id/descLbl"
+        app:layout_constraintTop_toBottomOf="@+id/descLbl" />
+
+    <TextView
+        android:id="@+id/isbnLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="ISBN"
+        app:layout_constraintEnd_toEndOf="@+id/titleLbl"
+        app:layout_constraintTop_toBottomOf="@+id/titleLbl" />
+
+    <Button
+        android:id="@+id/addBookBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Book"
+        app:layout_constraintEnd_toEndOf="@+id/priceLbl"
+        app:layout_constraintStart_toStartOf="@+id/priceLbl"
+        app:layout_constraintTop_toTopOf="@+id/clearFieldsBtn" />
+
+    <Button
+        android:id="@+id/clearFieldsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Clear Fields"
+        app:layout_constraintEnd_toEndOf="@+id/priceEdit"
+        app:layout_constraintStart_toStartOf="@+id/priceEdit"
+        app:layout_constraintTop_toBottomOf="@+id/priceEdit" />
+
+    <EditText
+        android:id="@+id/priceEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:width="200dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/priceLbl"
+        app:layout_constraintStart_toEndOf="@+id/priceLbl"
+        app:layout_constraintTop_toTopOf="@+id/priceLbl" />
+
+    <EditText
+        android:id="@+id/titleEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:width="200dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/titleLbl"
+        app:layout_constraintStart_toEndOf="@+id/titleLbl"
+        app:layout_constraintTop_toTopOf="@+id/titleLbl" />
+
+    <TextView
+        android:id="@+id/titleLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Title"
+        app:layout_constraintEnd_toEndOf="@+id/bookIdLbl"
+        app:layout_constraintTop_toBottomOf="@+id/bookIdLbl" />
+
+    <EditText
+        android:id="@+id/authorEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:width="200dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/authorLbl"
+        app:layout_constraintStart_toEndOf="@+id/authorLbl"
+        app:layout_constraintTop_toTopOf="@+id/authorLbl" />
+
+    <TextView
+        android:id="@+id/bookIdLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:text="Book ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/isbnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:width="200dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/isbnLbl"
+        app:layout_constraintStart_toEndOf="@+id/isbnLbl"
+        app:layout_constraintTop_toTopOf="@+id/isbnLbl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
